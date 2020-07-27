@@ -1,0 +1,296 @@
+html, body{
+    
+    overflow-x: hidden;
+}
+
+main {
+    
+    min-width: 100%;
+    position: relative;
+}
+
+nav {
+    box-shadow:0rem 0.5rem 0 0 olive;
+}
+
+.parent {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin-left: -15px;
+    padding-top: 50px;
+    height: 100%;
+    width: 105vw;
+    
+    
+}
+
+header {
+    padding-bottom: 20px;
+    
+}
+
+footer {
+    display: grid;
+    place-items: center;
+}
+
+.header-and-footer {
+    background-color: darkgreen;
+    padding: 1rem;
+    
+}
+/* set font color of all text in header-footer. Put all text in span */
+.header-and-footer span {
+    color: whitesmoke;
+}
+
+.header-and-footer .navbar-brand {
+    font-size: x-large;
+}
+
+.header-and-footer .nav-item {
+    font-size: large;
+}
+
+.nav-item span:hover {
+    color:  rgb(204, 204, 204);
+}
+
+.social-icons a {
+    color: whitesmoke;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+.social-icons a:hover {
+    color:  rgb(204, 204, 204);
+}
+
+.colored-row {
+    background-color: rgb(202, 202, 202);
+    
+}
+
+.git-icon {
+    color: black;
+    padding-top: 10px;
+    
+}
+
+.git-icon:hover{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.content-section {
+    
+    max-width: 60%;
+    
+    
+}
+
+.content-section.even {
+    padding-top: 100px;
+    padding-bottom:100px;
+}
+
+.content-section.odd {
+    padding-bottom: 0px;
+}
+
+.content-section h2 {
+    font-weight: 600;
+}
+
+.content-section #Chef-picture img {
+    width: 75%;
+}
+
+.content-section #stock-picture img {
+    width: 100%;
+}
+
+.carousel {
+    max-height: 50%;
+}
+
+.content-section p {
+    font-size: 1.2rem;
+}
+
+.content-section .google-play {
+    
+    display: block;
+}
+
+
+
+.google-play img {
+    width: 70%;
+}
+
+.content-section .image-container {
+    display: grid;
+    place-items: center;
+    
+}
+
+.clickable-image:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 40%;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.big-modal{
+    min-width: 70%;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+.profile-pic {
+    
+    width: 100%; 
+    border-radius: 10px; 
+    border: 3px solid darkolivegreen; 
+    box-shadow:  0 0 0 5px rgb(202, 202, 202),
+    0 0 0 10px darkolivegreen;
+}
+
+
+
+.skills-section {
+    padding-top: 15px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 10px;
+}
+
+.skills-section p {
+    font-size: large;
+    color: darkred;
+    font-weight: bolder;
+}
+
+.skills-section .row {
+    
+    font-style: italic;
+    font-size: large;
+    text-align: center;
+}
+
+.emphasized-text {
+    font-style: italic;
+    font-size: larger;
+}
+
+.come-in-left {
+    transform: translateX(600px);
+    animation: come-in 0.8s ease forwards;
+}
+
+.come-in-right {
+    transform: translateX(-600px);
+    animation: come-in 0.8s ease forwards;
+}
+
+
+.already-visible {
+    transform: translateX(0px);
+    animation: none;
+}
+
+
+@keyframes come-in {
+    to { transform: translateX(0);}
+}
+
+hr {
+    border: none;
+    height: 75px;
+    width: 200%;
+    position: relative;
+    background: olive;
+    
+    
+}
+
+hr.hr-left {
+    left: -30%;
+    top: -1.8%;
+    box-shadow:1rem 0.5rem 0 0 rgb(76, 112, 14);
+    transform: rotate(3deg);
+}
+
+hr.hr-right {
+    top: 2.5%;
+    
+    transform: rotate(-3deg);
+    box-shadow:1rem -0.5rem 0 0 rgb(76, 112, 14);
+    left: -50%;
+}
+
+.form-section {
+    
+    max-width: 50%;
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+
+.form-section .form-input {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid darkolivegreen;
+    border-radius: 5px;
+}
